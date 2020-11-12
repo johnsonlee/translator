@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/translate_assistant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <io.johnsonlee.android.translate.widget.DraggableLayout
+        android:id="@+id/google_translate_assistant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="2dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_google_translate"
+                tools:targetApi="lollipop" />
+        </androidx.cardview.widget.CardView>
+    </io.johnsonlee.android.translate.widget.DraggableLayout>
+    <ImageView
+        android:id="@+id/badge_google_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/badge_google_translate"
+        android:visibility="gone" />
+</FrameLayout>
